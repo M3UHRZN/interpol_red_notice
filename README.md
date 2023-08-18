@@ -1,7 +1,7 @@
 # interpol_red_notice
 ### Prerequisites to run the project:
-  1.Docker Desktop or Docker should be active on your computer.
-  1.To also make the RabbitMQ server operational, follow these steps:
+  -Docker Desktop or Docker should be active on your computer.
+  -To also make the RabbitMQ server operational, follow these steps:
 
 Open the RabbitMQ command prompt by navigating to 
 ```
