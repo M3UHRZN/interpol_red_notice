@@ -9,11 +9,11 @@ This project periodically retrieves data from the Interpol Red Notice website an
 
 Open the RabbitMQ command prompt by navigating to 
 ```
-C:\Program Files (x86)\RabbitMQ Server\rabbitmq_server-3.2.3\sbin".
+C:\Program Files (x86)\RabbitMQ Server\rabbitmq_server-3.2.3\sbin
 ```
 Enter the following command: 
 ```
-rabbitmq-plugins enable rabbitmq_management".
+rabbitmq-plugins enable rabbitmq_management
 ```
 
 #Usage:
