@@ -1,0 +1,38 @@
+version: '3'
+services:
+
+  container_c:
+    image: "rabbitmq:3-management"  
+    environment:    
+      RABBITMQ_HOST: "localhost" 
+    ports:
+      - "5672:5672" 
+      - "15672:15672"  
+    networks:
+      - mynetwork  
+
+  container_a:
+    build:
+      context: ./container_a
+    depends_on:
+      - container_c  
+
+    networks:
+      - mynetwork
+
+  container_b:
+    build:
+      context: ./container_b
+    depends_on:
+      - container_c  
+    ports:
+      - "5000:5000"
+    networks:
+      - mynetwork
+
+
+  
+
+networks:
+  mynetwork:
+    driver: bridge

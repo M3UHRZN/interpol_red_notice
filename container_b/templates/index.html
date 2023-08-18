@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interpol Red Notices</title>
+</head>
+<body>
+    <h1>Interpol Red Notices</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Date of Birth</th>
+            <th>Nationalities</th>
+            <th>Details</th>
+        </tr>
+        {% for notice in notices %}
+        <tr>
+            <td>{{ notice.name }}</td>
+            <td>{{ notice.date_of_birth }}</td>
+            <td>{{ notice.nationalities }}</td>
+            <td><a href="{{ notice._links.self.href }}" target="_blank">Details</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
